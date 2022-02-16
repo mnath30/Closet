@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://shuttle-ui.netlify.app/Components/main.css">   
+    <link rel="stylesheet" href="authentication.css">
+    <link rel="icon" href="../../resource/asset/thumbnail.png">
+    <title>Login-Closet</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navigation">
+            <div class="nav-brand-logo">
+                <img class="nav-img" src="../../resource/asset/_Logo.png" alt="website log">
+            </div>
+            <div class="nav-main-options"> 
+                <ul class="nav-ul">
+                    <li class="nav-li">MEN</li>
+                    <li class="nav-li">WOMEN</li>
+                    <li class="nav-li">KIDS</li>
+                </ul>
+            </div>
+            <div class="nav-search">
+                <input class="nav-search-input" type="text" placeholder="Search...">
+                <button class="nav-search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-sub-options"> 
+                <ul class="nav-ul">
+                    <li class="nav-li nav-active"><i class="fas fa-user"></i></li>
+                    <li class="nav-li"><i class="far fa-heart"></i></li>
+                    <li class="nav-li"><i class="fas fa-shopping-cart"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <main class="main">
+        <h3 class="txt-center txt-lg form-heading">Logout</h3>
+        <form class="txt-form">
+            <label for="email" class="txt-md form-para">Email</label>
+            <input class="txt-input txt-sm padding-sm" type="text" placeholder="Enter your email" id="email">
+            <br>
+            <label for="password" class="txt-md padding-sm">Password</label>
+            <input class="txt-input txt-sm padding-sm" type="password" placeholder="Enter your password" id="password">
+            <br>
+            <label class="txt-md padding-sm">
+            <input class="txt-input padding-sm" type="checkbox" name="remember">Remember Me? 
+            </label>
+            <a class="txt-md form-link padding-sm">Forgot your password?</a>
+            <button class="form-btn padding-sm">Login</button>
+            <a class="txt-md txt-bold form-link padding-sm">Create a new account</a>
+        </form>
+    </main>
+
+</body>
+</html>
