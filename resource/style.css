@@ -1,4 +1,4 @@
-@import url('../resource/variables.css');
+@import url('variables.css');
 
 /* header */
 header {
@@ -29,6 +29,8 @@ header {
 .nav-search-input:focus {
     outline: none;
 } 
+
+/* Padding */
 .padding-sm {
     padding:0.4rem;
 }
@@ -39,12 +41,29 @@ header {
     padding:1.2rem;
 }
 
+/* Button */
+button:hover {
+    cursor: pointer;
+}
+.main-btn {
+    background-color: var(--secondary-color);
+}
+.btn-card:hover {
+    background-color: var(--secondary-color);
+    opacity:0.8;
+}
+
 /* flex */
 .flex {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.8rem;
+}
+
+/* Horizontal line */
+hr {
+    border:1px solid var(--dark-grey);
 }
 
 /* Heading */
@@ -54,17 +73,20 @@ header {
 
 /* Card image container */
 .card-img {
-    width: 15rem;
+    border-radius: 8px;
     height: 20rem; 
     overflow: hidden;
-    border-radius: 8px;
+    width: 15rem;
 }
 
 /* Image inside card */
 .responsive-img {
+    height: 100%;
     padding: 0;
-    width: 100%;
-    height: 100%; 
+    width: 100%; 
+}
+.inline-block-elem {
+    display: inline-block;
 }
 
 /* media queries */

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://shuttle-ui.netlify.app/Components/main.css">   
+    <link rel="stylesheet" href="resource/finalPage.css">
+    <link rel="icon" href="resource/asset/thumbnail.png">
+    <title>Shopping Bag - Closet</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <header> 
+        <nav class="navigation">
+            <div class="nav-brand-logo">
+                <img class="nav-img" src="../../resource/asset/_Logo.png" alt="website log">
+            </div>
+            <div class="nav-main-options"> 
+                <ul class="nav-ul">
+                    <li class="nav-li">MEN</li>
+                    <li class="nav-li">WOMEN</li>
+                    <li class="nav-li">KIDS</li>
+                </ul>
+            </div>
+            <div class="nav-search">
+                <input class="nav-search-input" type="text" placeholder="Search...">
+                <button class="nav-search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-sub-options"> 
+                <ul class="nav-ul">
+                    <li class="nav-li nav-active"><i class="fas fa-user"></i></li>
+                    <li class="nav-li"><i class="far fa-heart"></i></li>
+                    <li class="nav-li"><i class="fas fa-shopping-cart"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <main class="main">
+        <!-- Heading -->
+        <h3 class="txt-center txt-lg heading">My Shopping Bag</h3>
+         
+        <div class="grid padding-lg">
+
+            <!-- Final Price Card -->
+            <div class="card card-vert sticky-pricing main-pricing">
+                <div class="card-body">  
+                    <h4 class="card-header">Price Details
+                    </h4>
+                    <hr class="line">
+                    <div class="card-para">
+                        <div class="flex pricing-details padding-sm">
+                            <span>Price (2 items)</span>
+                            <span>Rs. 2000</span>
+                        </div>
+                        <div class="flex pricing-details padding-sm">
+                            <span>Discount</span>
+                            <span>- Rs. 200</span>
+                        </div>
+                        <div class="flex pricing-details padding-sm">
+                            <span>Delivery Charges</span>
+                            <span>Rs. 100</span>
+                        </div>
+                        <hr class="line">
+                        <div class="flex pricing-details txt-bold padding-sm">
+                            <span>Total Amount</span>
+                            <span>Rs. 1900</span>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="btn-card main-btn btn-block txt-md">Place Order</button>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Product List in Cart-->
+            <div class="main-product">
+                <div class="card card-horiz">
+                    <div class="card-img-horiz">
+                        <img class="responsive-img" src="resource/asset/img10.jpg" alt="image-of-a-man">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-header">Marks & Aria</h5>
+                        <p class="card-para">Printed Tee <br>Rs. 1500</p>
+                        <div class="qty padding-sm">
+                            Quantity: 
+                            <button class="rounded-btn ">-</button>
+                            <span class="qty-box padding-sm">2</span>
+                            <button class="rounded-btn">+</button>
+                        </div>
+                        <div class="card-horiz-btn">
+                            <button class="btn-card cart-main-btn">Add to Wishlist</button>
+                            <button class="btn-card btn-card-second">Remove from Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-horiz">
+                    <div class="card-img-horiz">
+                        <img class="responsive-img" src="resource/asset/img9.jpg" alt="image-of-a-woman">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-header">Marks & Aria</h5>
+                        <p class="card-para">Printed Tee <br>Rs. 1500</p>
+                        <div class="qty padding-sm">
+                            Quantity: 
+                            <button class="rounded-btn ">-</button>
+                            <span class="qty-box padding-sm">2</span>
+                            <button class="rounded-btn">+</button>
+                        </div>
+                        <div class="card-horiz-btn">
+                            <button class="btn-card cart-main-btn">Add to Wishlist</button>
+                            <button class="btn-card btn-card-second">Remove from Cart</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+    
+            
+        </div>
+          
+    </main>
+</body>
+</html>

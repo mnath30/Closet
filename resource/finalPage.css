@@ -1,0 +1,88 @@
+@import url('style.css');
+@import url('variables.css');
+
+/* Heading */
+.heading {
+    padding:0.8rem 1.6rem 0 1.6rem;
+}
+
+/* Main content */
+.grid {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "product pricing";
+    height: 100vh;
+}
+
+/* Product List */
+.card {
+    margin: 1.6rem;
+    max-width: 25rem;
+}
+.main-product {
+    grid-area: product;
+    justify-self: center;  
+}
+.qty {
+    font-size: 1rem;
+}
+.rounded-btn {
+    background-color: transparent;
+    border:1px solid var(--secondary-color) ;
+    border-radius: 50%;
+    height:1.2rem;
+    line-height: 1.2rem;
+    width: 1.2rem;
+}
+
+/* Pricing Card*/
+.main-pricing {
+    align-self: start;
+    grid-area: pricing;
+    min-width: 14rem;   
+    position: sticky;
+    top:4rem;
+}
+.pricing-details {
+    justify-content: space-between;
+}
+
+/* Button */
+.cart-main-btn {
+    background-color: var(--secondary-btn-color);
+}
+.btn-card-second {
+    border-color: var(--secondary-btn-color);
+}
+.cart-main-btn:hover, .btn-card-second:hover {
+    background-color:var(--dark-secondary-btn);
+}
+
+/* media queries */
+@media only screen and (max-width: 850px) {
+    .card {
+        margin: 0.8rem;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .grid {
+        grid-template-columns: 1.5fr 1fr;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .grid {
+        grid-template-columns:1fr;
+        grid-template-areas: 
+        "product"
+        "pricing";
+        justify-items: center;
+    }
+    .main-pricing {
+        position: static;
+        width: inherit;
+    }
+
+}
+
+
