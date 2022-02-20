@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://shuttle-ui.netlify.app/Components/main.css">   
+    <link rel="stylesheet" href="resource/productpage.css">
+    <link rel="icon" href="resource/asset/thumbnail.png">
+    <title>Products - Closet</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <header> 
+        <nav class="navigation">
+            <div class="nav-brand-logo">
+                <img class="nav-img" src="../../resource/asset/_Logo.png" alt="website log">
+            </div>
+            <div class="nav-main-options"> 
+                <ul class="nav-ul">
+                    <li class="nav-li">MEN</li>
+                    <li class="nav-li">WOMEN</li>
+                    <li class="nav-li">KIDS</li>
+                </ul>
+            </div>
+            <div class="nav-search">
+                <input class="nav-search-input" type="text" placeholder="Search...">
+                <button class="nav-search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-sub-options"> 
+                <ul class="nav-ul">
+                    <li class="nav-li nav-active"><i class="fas fa-user"></i></li>
+                    <li class="nav-li"><i class="far fa-heart"></i></li>
+                    <li class="nav-li"><i class="fas fa-shopping-cart"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <main class="main">     
+        <div class="product-grid padding-lg">
+
+            <!-- Filter section -->
+            <aside class="product-filter">
+                <div class="flex-column">
+                    <button class="btn-link padding-sm">Clear All Filters</button>  
+                    <hr>            
+                    <h3 class="padding-sm">Filters</h3>
+                    <h3 class="padding-sm">Price Range</h3>
+                    <input class="padding-sm" type="range" min="1" max="100" value="50">
+                    <p class="padding-sm">Price under: 500</p>
+                    <h3 class="padding-sm">Category</h3>
+                    <div class="padding-sm">
+                        <input type="checkbox" id="all categories" name="all categories" checked>
+                        <label for="all categories">All Categories</label>
+                        <br>
+                        <input type="checkbox" id="category 1" name="category 1">
+                        <label for="category 1">Category 1</label>
+                        <br>
+                        <input type="checkbox" id="category 2" name="category 2">
+                        <label for="category 2">Category 2</label>
+                        <br>
+                        <input type="checkbox" id="category 3" name="category 3">
+                        <label for="category 3">Category 3</label>
+                    </div>
+                    <h3 class="padding-sm">Rating</h3>
+                    <div class="padding-sm">
+                        <input type="radio" id="4 stars and above"
+                         name="rating" value="4 stars and above">
+                        <label for="4 stars and above">4 Stars & above</label>
+                        <br>
+                        <input type="radio" id="3 stars and above"
+                         name="rating" value="3 stars and above">
+                        <label for="3 stars and above">3 Stars & above</label>
+                        <br>
+                        <input type="radio" id="2 stars and above"
+                         name="rating" value="2 stars and above">
+                        <label for="2 stars and above">2 Stars & above</label>
+                        <br>
+                        <input type="radio" id="1 stars and above"
+                         name="rating" value="1 stars and above">
+                        <label for="1 stars and above">1 Stars & above</label>
+                    </div>
+                    <h3 class="padding-sm">Sort By</h3>
+                    <div class="padding-sm">
+                        <input type="radio" id="New Arrivals"
+                         name="sorting" value="New Arrivals">
+                        <label for="New Arrivals">New Arrivals</label>
+                        <br>
+                        <input type="radio" id="Popularity"
+                         name="sorting" value="Popularity">
+                        <label for="Popularity">Popularity</label>
+                        <br>
+                        <input type="radio" id="Price - High to Low"
+                         name="sorting" value="Price - High to Low">
+                        <label for="Price - High to Low">Price - High to Low</label>
+                        <br>
+                        <input type="radio" id="Price - Low to High"
+                         name="sorting" value="Price - Low to High">
+                        <label for="Price - Low to High">Price - Low to High</label>
+                    </div>
+                </div>
+            </aside> 
+
+            <!-- Product List -->
+            <div class="main-product">
+                <!-- Heading -->
+                <h3 class="txt-center txt-lg heading">Showing Products</h3>
+                <!-- Product Cards -->
+                <div class="flex padding-lg">
+                    <div class="card card-vert ">
+                        <div class="card-img card-header-with-badge">
+                            <img class="responsive-img" src="../../resource/asset/img9.jpg" alt="image-of-a-woman">
+                            <span class="card-badge card-bottom-left-badge">4.1 <i class="fas fa-star text-danger"></i></span>
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-header">Marks & Aria</h5>
+                            <p class="card-para">Printed Tee <br>Rs. 1500</p>
+                            <div class="card-buttons">
+                                <button class="btn-card bg-secondary card-btn-main">Add to Cart</button>
+                                <button class="btn-card card-btn-second">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card card-vert">
+                        <div class="card-img card-header-with-badge">
+                            <img class="responsive-img" src="../../resource/asset/img10.jpg" alt="image-of-a-man">
+                            <span class="card-badge card-bottom-left-badge">4.1 <i class="fas fa-star text-danger"></i></span>
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-header">Marks & Aria</h5>
+                            <p class="card-para">Printed Tee <br>Rs. 1500</p>
+                            <div class="card-buttons">
+                                <button class="btn-card bg-secondary card-btn-main">Add to Cart</button>
+                                <button class="btn-card card-btn-second">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card card-vert">
+                        <div class="card-img card-header-with-badge">
+                            <img class="responsive-img" src="../../resource/asset/img9.jpg" alt="image-of-a-woman">
+                            <span class="card-badge card-bottom-left-badge">4.1 <i class="fas fa-star text-danger"></i></span>
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-header">Marks & Aria</h5>
+                            <p class="card-para">Printed Tee <br>Rs. 1500</p>
+                            <div class="card-buttons">
+                                <button class="btn-card bg-secondary card-btn-main">Add to Cart</button>
+                                <button class="btn-card card-btn-second">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card card-vert">
+                        <div class="card-img card-header-with-badge">
+                            <img class="responsive-img" src="../../resource/asset/img10.jpg" alt="image-of-a-man">
+                            <span class="card-badge card-bottom-left-badge">4.1 <i class="fas fa-star text-danger"></i></span>
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-header">Marks & Aria</h5>
+                            <p class="card-para">Printed Tee <br>Rs. 1500</p>
+                            <div class="card-buttons">
+                                <button class="btn-card bg-secondary card-btn-main">Add to Cart</button>
+                                <button class="btn-card card-btn-second">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card card-vert">
+                        <div class="card-img card-header-with-badge">
+                            <img class="responsive-img" src="../../resource/asset/img9.jpg" alt="image-of-a-woman">
+                            <span class="card-badge card-bottom-left-badge">4.1 <i class="fas fa-star text-danger"></i></span>
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-header">Marks & Aria</h5>
+                            <p class="card-para">Printed Tee <br>Rs. 1500</p>
+                            <div class="card-buttons">
+                                <button class="btn-card bg-secondary card-btn-main">Add to Cart</button>
+                                <button class="btn-card card-btn-second">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card card-vert">
+                        <div class="card-img card-header-with-badge">
+                            <img class="responsive-img" src="../../resource/asset/img10.jpg" alt="image-of-a-man">
+                            <span class="card-badge card-bottom-left-badge">4.1 <i class="fas fa-star text-danger"></i></span>
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-header">Marks & Aria</h5>
+                            <p class="card-para">Printed Tee <br>Rs. 1500</p>
+                            <div class="card-buttons">
+                                <button class="btn-card bg-secondary card-btn-main">Add to Cart</button>
+                                <button class="btn-card card-btn-second">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>    
+        </div>
+          
+    </main>
+</body>
+</html>
