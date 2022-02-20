@@ -36,3 +36,9 @@
     border: 2px solid var(--secondary-color);
     background-color: transparent;
 }
+
+@media only screen and (max-width:520px) {
+    .product-filter {
+        display: none;
+    }
+}
