@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="https://shuttle-ui.netlify.app/Components/main.css">   
     <link rel="stylesheet" href="resource/productpage.css">
     <link rel="icon" href="resource/asset/thumbnail.png">
-    <title>Products - Closet</title>
+    <title>Products | Closet</title>
 </head>
 <body>
     <!-- Navigation -->
+    <a name="top"></a> 
     <header> 
         <nav class="navigation">
             <div class="nav-brand-logo">
-                <img class="nav-img" src="../../resource/asset/_Logo.png" alt="website log">
+                <a href="index.html"><img class="nav-img" src="../../resource/asset/_Logo.png" alt="website log"></a>
             </div>
             <div class="nav-main-options"> 
                 <ul class="nav-ul">
-                    <li class="nav-li">MEN</li>
-                    <li class="nav-li">WOMEN</li>
-                    <li class="nav-li">KIDS</li>
+                    <li class="nav-li nav-active"><a href="productpage.html">MEN</a></li>
+                    <li class="nav-li"><a href="productpage.html">WOMEN</a></li>
+                    <li class="nav-li"><a href="productpage.html">KIDS</a></li>
                 </ul>
             </div>
             <div class="nav-search">
@@ -30,13 +31,13 @@
             </div>
             <div class="nav-sub-options"> 
                 <ul class="nav-ul">
-                    <li class="nav-li nav-active"><i class="fas fa-user"></i></li>
-                    <li class="nav-li"><i class="far fa-heart"></i></li>
-                    <li class="nav-li"><i class="fas fa-shopping-cart"></i></li>
+                    <li class="nav-li"><a href="logout.html"><i class="fas fa-user"></i></a></li>
+                    <li class="nav-li"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+                    <li class="nav-li"><a href="finalPage.html"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </div>
         </nav>
-    </header>
+    </header> 
 
     <!-- Main section -->
     <main class="main">     
@@ -108,6 +109,7 @@
             <div class="main-product">
                 <!-- Heading -->
                 <h3 class="txt-center txt-lg heading">Showing Products</h3>
+
                 <!-- Product Cards -->
                 <div class="flex padding-lg">
                     <div class="card card-vert ">
@@ -197,6 +199,19 @@
                 </div>
             </div>    
         </div>
+        <!-- Footer -->
+        <footer class="footer padding-sm txt-md">
+            <div class="padding-sm txt-bold txt-center"><a href="#top">Back to top</a></div>
+            <div class="flex flex-center">
+                <p class="nametext">Contact us</p>
+                <ul class="flex padding-sm">
+                    <li><a href="https://twitter.com/maitreyee__nath" target="__blank" ><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/mnath30" target="__blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/maitreyee-nath" target="__blank"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div> 
+            <p class="txt-center">&copy; 2022 Closet. All rights reserved</p>
+        </footer>  
           
     </main>
 </body>

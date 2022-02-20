@@ -1,5 +1,5 @@
-@import url('../../resource/style.css');
-@import url('../../resource/variables.css');
+@import url('style.css');
+@import url('variables.css');
 
 /* Gradient */
 body {
@@ -48,6 +48,18 @@ input[type="checkbox"] {
 }
 .form-btn:hover {
     cursor: pointer;
+    opacity: 0.8;
+}
+.btn-second {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+.btn-first {
+    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+}
+.btn-first:hover , .btn-second:hover {
+    background-color: var(--secondary-color);
     opacity: 0.8;
 }
 
