@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://shuttle-ui.netlify.app/Components/main.css">   
-    <link rel="stylesheet" href="wishlist.css">
-    <link rel="icon" href="../../resource/asset/thumbnail.png">
-    <title>My Wishlist - Closet</title>
+    <link rel="stylesheet" href="resource/wishlist.css">
+    <link rel="icon" href="resource/asset/thumbnail.png">
+    <title>My Wishlist | Closet</title>
 </head>
 <body>
     <!-- Navigation -->
-    <header>
+    <a name="top"></a> 
+    <header> 
         <nav class="navigation">
             <div class="nav-brand-logo">
-                <img class="nav-img" src="../../resource/asset/_Logo.png" alt="website log">
+                <a href="index.html"><img class="nav-img" src="../../resource/asset/_Logo.png" alt="website log"></a>
             </div>
             <div class="nav-main-options"> 
                 <ul class="nav-ul">
-                    <li class="nav-li">MEN</li>
-                    <li class="nav-li">WOMEN</li>
-                    <li class="nav-li">KIDS</li>
+                    <li class="nav-li"><a href="productpage.html">MEN</a></li>
+                    <li class="nav-li"><a href="productpage.html">WOMEN</a></li>
+                    <li class="nav-li"><a href="productpage.html">KIDS</a></li>
                 </ul>
             </div>
             <div class="nav-search">
@@ -30,13 +31,13 @@
             </div>
             <div class="nav-sub-options"> 
                 <ul class="nav-ul">
-                    <li class="nav-li nav-active"><i class="fas fa-user"></i></li>
-                    <li class="nav-li"><i class="far fa-heart"></i></li>
-                    <li class="nav-li"><i class="fas fa-shopping-cart"></i></li>
+                    <li class="nav-li"><a href="logout.html"><i class="fas fa-user"></i></a></li>
+                    <li class="nav-li nav-active"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+                    <li class="nav-li"><a href="finalPage.html"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </div>
         </nav>
-    </header>
+    </header> 
 
     <!-- Main section -->
     <h4 class="heading-h4 txt-center padding-md">My Wishlist</h3>
@@ -126,6 +127,19 @@
             </div>
         </div> 
     </div>
+    <!-- Footer -->
+    <footer class="footer padding-sm txt-md">
+        <div class="padding-sm txt-bold txt-center"><a href="#top">Back to top</a></div>
+        <div class="flex flex-center">
+            <p class="nametext">Contact us</p>
+            <ul class="flex padding-sm">
+                <li><a href="https://twitter.com/maitreyee__nath" target="__blank" ><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://github.com/mnath30" target="__blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/maitreyee-nath" target="__blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div> 
+        <p class="txt-center">&copy; 2022 Closet. All rights reserved</p>
+    </footer>  
 
 </body>
 </html>    

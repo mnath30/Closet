@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://shuttle-ui.netlify.app/Components/main.css">   
-    <link rel="stylesheet" href="authentication.css">
-    <link rel="icon" href="../../resource/asset/thumbnail.png">
-    <title>Login-Closet</title>
+    <link rel="stylesheet" href="resource/authentication.css">
+    <link rel="icon" href="resource/asset/thumbnail.png">
+    <title>Login | Closet</title>
 </head>
 <body>
     <!-- Navigation -->
-    <header>
+    <header> 
         <nav class="navigation">
             <div class="nav-brand-logo">
-                <img class="nav-img" src="../../resource/asset/_Logo.png">
+                <a href="index.html"><img class="nav-img" src="../../resource/asset/_Logo.png" alt="website log"></a>
             </div>
             <div class="nav-main-options"> 
                 <ul class="nav-ul">
-                    <li class="nav-li">MEN</li>
-                    <li class="nav-li">WOMEN</li>
-                    <li class="nav-li">KIDS</li>
+                    <li class="nav-li"><a href="productpage.html">MEN</a></li>
+                    <li class="nav-li"><a href="productpage.html">WOMEN</a></li>
+                    <li class="nav-li"><a href="productpage.html">KIDS</a></li>
                 </ul>
             </div>
             <div class="nav-search">
@@ -30,32 +30,31 @@
             </div>
             <div class="nav-sub-options"> 
                 <ul class="nav-ul">
-                    <li class="nav-li nav-active"><i class="fas fa-user"></i></li>
-                    <li class="nav-li"><i class="far fa-heart"></i></li>
-                    <li class="nav-li"><i class="fas fa-shopping-cart"></i></li>
+                    <li class="nav-li nav-active"><a href="login.html"><i class="fas fa-user"></i></a></li>
+                    <li class="nav-li"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+                    <li class="nav-li"><a href="finalPage.html"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </div>
         </nav>
-    </header>
+    </header> 
+   
 
     <!-- Main section -->
     <main class="main">
-        <h3 class="txt-center txt-lg form-heading">Signup</h3>
+        <h3 class="txt-center txt-lg form-heading">Login</h3>
         <form class="txt-form">
-            <label for="name" class="txt-md form-label">Name</label>
-            <input class="txt-input txt-sm padding-sm" type="text" placeholder="Enter your name" id="name">
-            <br>
-            <label for="contact" class="txt-md form-label">Mobile number</label>
-            <input class="txt-input txt-sm padding-sm" type="tel" maxlength="10" placeholder="Enter your mobile number" id="contact">
-            <br>
             <label for="email" class="txt-md form-label">Email</label>
             <input class="txt-input txt-sm padding-sm" type="email" placeholder="Enter your email" id="email">
             <br>
             <label for="password" class="txt-md form-label">Password</label>
             <input class="txt-input txt-sm padding-sm" type="password" placeholder="Enter your password" id="password">
             <br>
-            <button class="form-btn padding-sm">Signup</button>
-            <p class="txt-md form-label">Already have an account? <span><a class="form-link" href="login.html">Login</a></span></p>
+            <label class="txt-md padding-sm form-label">
+            <input class="txt-input padding-sm" type="checkbox" name="remember">Remember Me? 
+            </label>
+            <a class="txt-md form-link" href="resetPassword.html">Forgot your password?</a>
+            <button class="form-btn padding-sm" href="#">Login</button>
+            <a class="txt-md txt-bold form-link" href="signup.html">Create a new account</a>
         </form>
     </main>
 
